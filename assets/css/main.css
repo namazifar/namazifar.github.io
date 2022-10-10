@@ -1700,8 +1700,10 @@
 		-ms-transition: color 0.2s ease, border-bottom 0.2s ease;
 		transition: color 0.2s ease, border-bottom 0.2s ease;
 		text-decoration: none;
-/*		border-bottom: dotted 1px;*/
-		color: inherit;
+/*		border-bottom: dotted 1px;
+		color: inherit;*/
+		font-weight: 500;
+		color: #177d70;
 	}
 
 		a:hover {
