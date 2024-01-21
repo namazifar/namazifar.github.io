@@ -13,7 +13,7 @@
 
 .tl {
   width: 100%;
-  padding: 50px 50px;
+  /*padding: 50px 50px;*/
   position: relative;
 }
 .tl:before {
@@ -43,6 +43,7 @@
   padding-right: 30px;
   text-align: right;
   position: relative;
+  font-weight:500;
 }
 .tl-entry .tl-title:before {
   content: '';
@@ -57,10 +58,12 @@
   z-index: 99;
   box-sizing: content-box;
 }
-.tl-entry .tl-title h3 {
-  margin: 0;
-  font-size: 120%;
-}
+    .tl-entry .tl-title h3 {
+        margin: 0;
+        font-size: 120%;
+        color: #bd3a3a !important; 
+        font-weight: 500 !important;
+    }
 .tl-entry .tl-title p {
   margin: 0;
   font-size: 100%;
