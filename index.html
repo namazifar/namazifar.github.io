@@ -37,6 +37,39 @@
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDZ293G"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+
+<script>
+	// Define the function to send a request to the Count API and update the visit count
+	function countVisit() {
+		fetch('https://api.countapi.xyz/hit/namazifar.github.io/visits')
+			.then(response => response.json())
+			.then(data => {
+				// Update the visit count on your webpage
+				document.getElementById('visitCount').textContent = data.value;
+			})
+			.catch(error => {
+				console.error('Error:', error);
+			});
+	}
+
+	// Call the countVisit function to increment the visit count when the page loads
+	countVisit();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- End Google Tag Manager (noscript) -->
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -704,7 +737,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<a href="http://hackerrank.com/Namazifar"><img src="images/hackerrank.png" title="Hackerrank" alt="" width=40px /></a>
 						</p>
 
-						<h5>This site has been visited <span id="visitCount"></span> times.</h5>
+								<p>Number of visits: <span id="visitCount"></span></p>
 						</p>
 					</footer>
 			</div>
