@@ -36,26 +36,8 @@
 	</script>
 	<!-- End Google Tag Manager -->
 
-
-
-	<script>
-		function countVisit() {
-			var today = new Date().toISOString().slice(0, 10);
-			var apiUrl = 'https://api.countapi.xyz/get/namazifar.github.io/' + today;
-
-			fetch(apiUrl)
-				.then(response => response.json())
-				.then(data => {
-					document.getElementById('visitCount').textContent = data.value;
-				})
-				.catch(error => {
-					console.error('Error:', error);
-				});
-		}
-	</script>
-
 </head>
-	<body onload="countVisit()">
+	<body>
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDZ293G"
@@ -742,11 +724,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<a href="https://www.linkedin.com/in/mj-namazifar/" class="label"><img src="images/linkedin.png" alt="" title="Linkedin" width=40px /></a>
 							<a href="http://hackerrank.com/Namazifar"><img src="images/hackerrank.png" title="Hackerrank" alt="" width=40px /></a>
 						</p>
-
-						<p>Number of visits: <span id="visitCount"></span></p>
-
-
-
 						<p>
 							<!-- Statistics by www.1abzar.com --->
 							<script type="text/javascript" src="https://1abzar.ir/abzar/tools/stat/amar-v3-ramz.php?mod=6&amar=fpl3u2os-k0547vsb2u4ln15admv1z&p=842a939c39c7a18948eea9e4731618f1"></script><div style="display:none"><h3><a href="https://www.1abzar.com/abzar/stat.php">&#1570;&#1605;&#1575;&#1585;&#1711;&#1740;&#1585; &#1608;&#1576;&#1604;&#1575;&#1711;</a></h3></div>
